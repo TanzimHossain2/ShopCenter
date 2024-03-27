@@ -1,8 +1,7 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import NavBar from '@/components/NavBar';
 import ProductDisplay from '@/components/ProductDisplay';
-import SubscriptionForm from '@/components/SubscriptionForm';
+import Subscription from '@/components/Subscription';
 import productsData from '@/db/productsDB.json';
 
 const Home = () => {
@@ -23,11 +22,10 @@ const Home = () => {
       <main>
         <section className="w-11/12 lg:w-10/12 max-w-7xl mx-auto py-10">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4 my-4 lg:my-10">
-
             <ProductDisplay data={data} />
           </div>
         </section>
-        <SubscriptionForm />
+        <Subscription />
       </main>
       <Footer />
     </>
